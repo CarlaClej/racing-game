@@ -36,7 +36,11 @@ public class Vehicle {
         System.out.println("Remaining fuel: " + fuelLevel);
 
         return traveledDistance;
+    }
 
+    public void decelerate() {
+        // TODO: implement this
+        System.out.println("This is a just a demo method");
     }
 
 }
