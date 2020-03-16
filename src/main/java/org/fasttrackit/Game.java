@@ -7,6 +7,7 @@ public class Game {
     public void start(){
         System.out.println("Welcome!");
 
+        int getPlayerCountFromUser =1;
         int playerCount = getPlayerCountFromUser();
     }
 

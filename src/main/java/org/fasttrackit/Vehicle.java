@@ -4,15 +4,22 @@ import javax.sound.midi.Soundbank;
 
 public class Vehicle {
 
+    // static variable / class variable
+    static int totalVehicleCount;
+
     // instance variables
-    int racingNumber;
-    String name;
-    int maxSpeed;
-    double mileage;
-    String colour;
-    double fuelLevel;
-    double totalDistance;
-    boolean damaged;
+    private int racingNumber;
+    private String name;
+    private int maxSpeed;
+    private double mileage;
+    private String colour;
+    private double fuelLevel;
+    private double totalDistance;
+    private boolean damaged;
+
+    public Vehicle () {
+        totalVehicleCount++;
+    }
 
     public double accelerate(double speed, double durationInHours) {
         if (fuelLevel <= 0) {
@@ -64,4 +71,69 @@ public class Vehicle {
         System.out.println("This is a just a demo method");
     }
 
+    // write-only
+
+    public int getRacingNumber() {
+        return racingNumber;
+    }
+
+    public void setRacingNumber(int racingNumber) {
+        this.racingNumber = racingNumber;
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    public void setName(String name) {
+        this.name = name.trim();
+    }
+
+    public int getMaxSpeed() {
+        return maxSpeed;
+    }
+
+    public void setMaxSpeed(int maxSpeed) {
+        this.maxSpeed = maxSpeed;
+    }
+
+    public double getMileage() {
+        return mileage;
+    }
+
+    public void setMileage(double mileage) {
+        this.mileage = mileage;
+    }
+
+    public String getColour() {
+        return colour;
+    }
+
+    public void setColour(String colour) {
+        this.colour = colour;
+    }
+
+    public double getFuelLevel() {
+        return fuelLevel;
+    }
+
+    public void setFuelLevel(double fuelLevel) {
+        this.fuelLevel = fuelLevel;
+    }
+
+    public double getTotalDistance() {
+        return totalDistance;
+    }
+
+    public void setTotalDistance(double totalDistance) {
+        this.totalDistance = totalDistance;
+    }
+
+    public boolean isDamaged() {
+        return damaged;
+    }
+
+    public void setDamaged(boolean damaged) {
+        this.damaged = damaged;
+    }
 }
