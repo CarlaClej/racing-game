@@ -79,6 +79,7 @@ public class Vehicle {
     protected Vehicle clone() {
         return new Vehicle();
     }
+
     // write-only
 
     public int getRacingNumber() {
