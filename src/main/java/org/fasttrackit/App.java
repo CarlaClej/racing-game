@@ -10,68 +10,68 @@ import java.util.Vector;
 public class App {
 
     public static void main( String[] args )    {
-//        Game game = new Game();
-//        game.start();
+        Game game = new Game();
+        game.start();
 
-        //method implementation taken from object's class, not from variable's class
-        Vehicle cheater = new CheatingVehicle();
-        cheater.setName("Cheater");
-
-        cheater.accelerate(60,1);
-
-        System.out.println("Total distance: " + cheater.getTotalDistance());
-
-        //variable type decided what methods can be invoked
-        //type casting
-        ((CheatingVehicle) cheater).fly();
-
-
-        Vehicle vehicle1 = new Vehicle();
-//        vehicle1.totalVehicleCount = 1;
-
-        Vehicle vehicle2 = new Vehicle();
-//        vehicle2.totalVehicleCount = 2;
-
-//        Vehicle.totalVehicleCount = 50;
-
-        System.out.println("Total count from vehicle1: " + vehicle1.getTotalVehicleCount());
-        System.out.println("Total count from vehicle2: " + vehicle2.getTotalVehicleCount());
-        System.out.println("Total count from Vehicle class: " + Vehicle.getTotalVehicleCount());
-
-
-//        System.out.println("Please enter vehicle name:");
-//        Scanner scanner1 = new Scanner(System.in);
-//        String vehicleName = scanner1.nextLine();
+//        //method implementation taken from object's class, not from variable's class
+//        Vehicle cheater = new CheatingVehicle();
+//        cheater.setName("Cheater");
 //
-//        System.out.println("Entered name: " + vehicleName);
+//        cheater.accelerate(60);
 //
-//        System.out.println( "Welcome to the racing game!" );
-
-        Engine engine1 = new Engine();
-        engine1.manufacturer = "VW";
-        engine1.capacity = 2000;
-
-        Car carReference = new Car(engine1);
-        carReference.setName("Audi");
-        carReference.setColour("red");
-        carReference.setMaxSpeed(260);
-        carReference.setMileage(6.2);
-        carReference.setFuelLevel(100);
-        carReference.setDamaged(true);
-
-        System.out.println(carReference);
-
-        System.out.println("Name: " + carReference.getName());
-
-//        carReference.engine = new Engine();
-//        carReference.engine.manufacturer = "VW";
-//        carReference.engine.capacity = 2000;
-
-        double currentDistance = carReference.accelerate(60, 1);
-        System.out.println("Current distance: " + currentDistance);
-
-        Mechanic mechanic = new Mechanic();
-        mechanic.repair(carReference);
+//        System.out.println("Total distance: " + cheater.getTotalDistance());
+//
+//        //variable type decided what methods can be invoked
+//        //type casting
+//        ((CheatingVehicle) cheater).fly();
+//
+//
+//        Vehicle vehicle1 = new Vehicle();
+////        vehicle1.totalVehicleCount = 1;
+//
+//        Vehicle vehicle2 = new Vehicle();
+////        vehicle2.totalVehicleCount = 2;
+//
+////        Vehicle.totalVehicleCount = 50;
+//
+//        System.out.println("Total count from vehicle1: " + vehicle1.getTotalVehicleCount());
+//        System.out.println("Total count from vehicle2: " + vehicle2.getTotalVehicleCount());
+//        System.out.println("Total count from Vehicle class: " + Vehicle.getTotalVehicleCount());
+//
+//
+////        System.out.println("Please enter vehicle name:");
+////        Scanner scanner1 = new Scanner(System.in);
+////        String vehicleName = scanner1.nextLine();
+////
+////        System.out.println("Entered name: " + vehicleName);
+////
+////        System.out.println( "Welcome to the racing game!" );
+//
+//        Engine engine1 = new Engine();
+//        engine1.manufacturer = "VW";
+//        engine1.capacity = 2000;
+//
+//        Car carReference = new Car(engine1);
+//        carReference.setName("Audi");
+//        carReference.setColour("red");
+//        carReference.setMaxSpeed(260);
+//        carReference.setMileage(6.2);
+//        carReference.setFuelLevel(100);
+//        carReference.setDamaged(true);
+//
+//        System.out.println(carReference);
+//
+//        System.out.println("Name: " + carReference.getName());
+//
+////        carReference.engine = new Engine();
+////        carReference.engine.manufacturer = "VW";
+////        carReference.engine.capacity = 2000;
+//
+//        double currentDistance = carReference.accelerate(60, 1);
+//        System.out.println("Current distance: " + currentDistance);
+//
+//        Mechanic mechanic = new Mechanic();
+//        mechanic.repair(carReference);
 //
 //        System.out.println("Is car damaged? " + carReference.damaged);
 //
